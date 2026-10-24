@@ -6,9 +6,9 @@
 
 A custom in-game phone for Minecraft Java 1.20.1 / Forge 47.4.x / Java 17. Right-click the `zonefon:phone` item to open Music, YouTube, Friends, Messages, Camera and ZoneMail. The server administrator supplies the phone according to server rules.
 
-Use the matching **0.1.0-beta5** Server JAR on a dedicated server and Client JAR on each player. Singleplayer uses only the Client JAR, which includes integrated-server logic. Never install both in the same mods folder.
+Use the matching **0.1.0-beta12** Server JAR on a dedicated server and Client JAR on each player. Singleplayer uses only the Client JAR, which includes integrated-server logic. Never install both in the same mods folder.
 
-Music accepts direct public HTTPS MP3/WAV URLs; it does not extract YouTube audio. Playback is local and nearby listeners follow the server's configured radius. YouTube is optional and requires client-side MCEF Forge 2.1.6 for 1.20.1 with its Chromium runtime. Other phone functions work without MCEF. No direct ZoneCore dependency.
+Music accepts direct public HTTPS MP3/WAV URLs; it does not extract YouTube audio. Playback is local and nearby listeners follow the server's configured radius. YouTube is optional and requires client-side MCEF Forge 2.1.6 for 1.20.1 with its Chromium runtime. Other phone functions work without MCEF. **Simple Voice Chat API 2.6.0+ is required on both sides** (companion 2.6.22). Calls can ring, answer, reject and hang up through isolated private groups. New: a personal MP3/WAV library, visible YouTube playback controls and validated larger photos. Protocol **zonefon-11**; both sides must use beta12. Actual two-player voice/UI testing remains pending. No direct ZoneCore dependency.
 
 No private player accounts or production server configuration is included. Beta public builds are protected distributions; full graphical gameplay and multiplayer testing are separate from archive/startup checks.
 
@@ -16,9 +16,9 @@ No private player accounts or production server configuration is included. Beta 
 
 Teléfono propio para Minecraft Java 1.20.1 / Forge 47.4.x / Java 17. Clic derecho con `zonefon:phone` para abrir Música, YouTube, Amigos, Mensajes, Cámara y ZoneMail. La administración entrega el teléfono según las reglas de su servidor.
 
-Usa **0.1.0-beta5** en ambos lados: JAR Server en servidor dedicado y JAR Client en los jugadores. En mundo individual instala solo Client, que incluye servidor integrado. Nunca pongas ambos JAR en la misma carpeta.
+Usa **0.1.0-beta12** en ambos lados: JAR Server en servidor dedicado y JAR Client en los jugadores. En mundo individual instala solo Client, que incluye servidor integrado. Nunca pongas ambos JAR en la misma carpeta.
 
-La música usa URL HTTPS directas de MP3/WAV públicos; no extrae audio de YouTube. Cada cliente reproduce el audio y el servidor valida la proximidad. YouTube es opcional y requiere MCEF Forge 2.1.6 para 1.20.1 en el cliente y su runtime Chromium. Las demás apps funcionan sin MCEF. No depende directamente de ZoneCore.
+La música usa URL HTTPS directas de MP3/WAV públicos; no extrae audio de YouTube. Cada cliente reproduce el audio y el servidor valida la proximidad. YouTube es opcional y requiere MCEF Forge 2.1.6 para 1.20.1 en el cliente y su runtime Chromium. Las demás apps funcionan sin MCEF. **Simple Voice Chat API 2.6.0+ es obligatorio en ambos lados** (acompañante 2.6.22). Permite llamadas con timbre, contestar, rechazar y colgar mediante grupos privados aislados. Añade biblioteca personal MP3/WAV, controles de YouTube visible y fotos mayores validadas. Protocolo **zonefon-11**; ambos lados deben usar beta12. Falta comprobar voz/interfaz con dos jugadores reales. No depende directamente de Core.
 
 Distribución beta protegida, sin cuentas ni configuración privada de producción. La inspección del archivo y el arranque aislado no certifican todas las funciones gráficas ni el multijugador.
 
@@ -28,8 +28,8 @@ Minecraft **1.20.1** · Forge **47.4.x** · Java **17**. Check the approval stat
 
 | Side / Lado | Version / Versión | CurseForge file / Archivo |
 |---|---|---|
-| server | 0.1.0-beta5 | [9303247](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9303247) |
-| client | 0.1.0-beta5 | [9303264](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9303264) |
+| server | 0.1.0-beta12 | [9312299](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9312299) |
+| client | 0.1.0-beta12 | [9312320](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9312320) |
 
 ## Installation checklist / Lista de instalación
 
