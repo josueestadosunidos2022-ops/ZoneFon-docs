@@ -1,4 +1,19 @@
-# ZoneFon 0.1.0-beta14
+# ZoneFon
+
+## Current builds / Versiones actuales — 2026-11-03
+
+| Side / Lado | Version / Versión | CurseForge |
+|---|---|---|
+| ZoneFon server | 0.1.0-beta15 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9426534) |
+| ZoneFon client | 0.1.0-beta15 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9426539) |
+
+[Changes, installation and compatibility / Cambios, instalación y compatibilidad](RELEASE-2026-11-03.md).
+
+Public protected Beta builds. A submitted file becomes downloadable only after CurseForge approval. / Betas públicas protegidas: cada archivo queda descargable cuando CurseForge lo aprueba.
+
+## Earlier documentation / Documentación anterior
+
+The version and side table above takes precedence over historical versions below. / La tabla anterior prevalece sobre versiones históricas de la documentación siguiente.
 
 ## English
 
