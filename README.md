@@ -1,49 +1,56 @@
 # ZoneFon
 
-## Current builds / Versiones actuales — 2026-11-03
+An in-game phone with nine apps: music, messages, calls, camera, ZoneMail, friends, compass, YouTube and settings.
 
-| Side / Lado | Version / Versión | CurseForge |
-|---|---|---|
-| ZoneFon server | 0.1.0-beta15 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9426534) |
-| ZoneFon client | 0.1.0-beta15 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zonefon/files/9426539) |
+Teléfono con nueve apps: música, mensajes, llamadas, cámara, ZoneMail, amigos, brújula, YouTube y ajustes.
 
-[Changes, installation and compatibility / Cambios, instalación y compatibilidad](RELEASE-2026-11-03.md).
+## Current release / Entrega actual — 2026-11-06
 
-Public protected Beta builds. A submitted file becomes downloadable only after CurseForge approval. / Betas públicas protegidas: cada archivo queda descargable cuando CurseForge lo aprueba.
+Minecraft **1.20.1**, Forge **47.x** (47.4.x for this release set), Java **17**. File availability follows CurseForge approval. / Disponibilidad de archivos según aprobación de CurseForge.
 
-## Earlier documentation / Documentación anterior
+| Side / Lado | Version / Versión |
+|---|---|
+| Server / Servidor | 0.1.0-beta16 |
+| Client / Cliente | 0.1.0-beta16 |
 
-The version and side table above takes precedence over historical versions below. / La tabla anterior prevalece sobre versiones históricas de la documentación siguiente.
+**Protocol / Protocolo:** zonefon-14.
 
-## English
+[Downloads / Descargas](https://www.curseforge.com/projects/1762211/files) · [Release guide / Guía de novedades](RELEASE-2026-11-06.md) · [Configuration / Configuración](CONFIGURATION.md)
 
-A handheld phone with music, friends, messages, calls, camera and ZoneMail. Obtain zonefon:phone and right-click it. Music supports direct public HTTPS MP3/WAV links; YouTube video uses optional client MCEF, not audio extraction. Simple Voice Chat API 2.6.0+ is required on both sides; configure its UDP port for calls and MP3 broadcasting. Use the beta14 client/server pair; clients can also host an integrated world.
+## English — Requirements and quick start
 
-## Español
+Simple Voice Chat API 2.6.0+ is required on both sides; configure its UDP service for voice. MCEF is optional on clients for visible YouTube playback. No Core dependency. Use beta16 on both network sides; singleplayer uses the client JAR only.
 
-Teléfono con música, amigos, mensajes, llamadas, cámara y ZoneMail. Obtén zonefon:phone y ábrelo con clic derecho. Música admite enlaces HTTPS públicos directos MP3/WAV; YouTube usa MCEF opcional de cliente, sin extracción de audio. Se requiere API 2.6.0+ de Simple Voice Chat en ambos lados; configura su puerto UDP para llamadas/emisión. Usa cliente y servidor beta14.
+Obtain `zonefon:phone`, right-click it or press F8 with it in your inventory. Escape returns to the app home. Use Música for direct HTTPS MP3/WAV or Mis MP3 for local files; YouTube requires its visible MCEF player.
 
+### What changed
 
-| Side / Lado | Version | File |
-|---|---|---|
-| server | 0.1.0-beta14 | `zonefon-server-0.1.0-beta14-protected.jar` |
-| client | 0.1.0-beta14 | `zonefon-client-0.1.0-beta14-protected.jar` |
+- New midnight-blue/purple/cyan phone layout and model, F8 open/close, per-contact drafts, unread indicators and private return-point compass.
+- Personal music library scanning moves off the graphics thread, supports circular play/repeat and preserves approximate position when switching output.
+- Asynchronous photo gallery, zoom/pan up to 6× and a visible YouTube window that preserves its session alongside the phone when space allows.
 
-## Dependencies / Dependencias
+## Español — Requisitos e inicio
 
-- **server**: voicechat_api: Required Dependency ([2.6.0,))
-- **client**: voicechat_api: Required Dependency ([2.6.0,)); mcef: Optional Dependency (YouTube only)
+API 2.6.0+ de Simple Voice Chat obligatoria en ambos lados; configura su UDP para voz. MCEF opcional solo cliente para YouTube visible. Sin dependencia de Core. Beta16 en ambos lados; individual usa solo el JAR cliente.
 
-## Installation / Instalación
+Obtén `zonefon:phone`, clic derecho o F8 llevándolo en inventario. Escape vuelve al inicio. Música acepta MP3/WAV HTTPS directos; Mis MP3 usa archivos locales; YouTube requiere reproductor visible MCEF.
 
-Install only the file for each side. Never mix two versions or both side distributions in one mods folder. Back up the world and preserve TOML/player data. Dedicated-server-only mods do not belong in a client modpack.
+### Novedades
 
-Instala solo el archivo del lado correspondiente. No mezcles versiones ni ambos JAR en una carpeta mods. Respalda mundo y conserva TOML/progreso. Los mods exclusivos de servidor no van en el modpack de cliente.
+- Nuevo diseño/modelo azul oscuro, morado y celeste, F8 para abrir/cerrar, borradores por contacto, avisos de no leído y brújula privada de regreso.
+- Biblioteca musical fuera del hilo gráfico, reproducción circular/repetición y posición aproximada conservada al cambiar salida.
+- Galería asíncrona con zoom/arrastre hasta 6× y ventana visible de YouTube que conserva sesión junto al teléfono cuando hay espacio.
 
-Protected public files retain features without distributing private source, mappings or production configuration/account data. File/resources/shared schemas and isolated server startup/clean save were checked; no new GUI/full-modpack or live multiplayer test was performed. File availability depends on CurseForge approval.
+## Updating / Actualizar
 
-Los archivos públicos conservan funciones con protección, sin fuentes, mappings ni datos privados. Se verificaron archivos/esquemas y arranque/cierre local aislado; no una nueva prueba gráfica o multijugador real. Disponibilidad sujeta a aprobación de CurseForge.
+Stop the affected instance, back up world/configuration, replace only the previous same-mod/same-side JAR and retain player data. Never install the dedicated and client JARs of one mod together. / Detén la instancia correspondiente, respalda mundo/configuración y sustituye solo el JAR del mismo mod y lado conservando datos. Nunca instales juntos los JAR dedicado y cliente del mismo mod.
 
-## Ownership / Titularidad
+## Validation scope / Alcance de verificación
 
-Original ZONE code and artwork © Elgochogms. All Rights Reserved. Public documentation repository only; source and mappings remain private.
+The finished delivery includes bounded automated validation and build checks. An expanded graphical session, two-player voice/music and the full production modpack are not certified by compilation or these checks.
+
+La entrega terminada incluye comprobaciones automatizadas acotadas y compilación. No certifica sesión gráfica ampliada, voz/música con dos jugadores ni modpack completo de producción.
+
+## Rights / Derechos
+
+Original ZONE code and assets © Elgochogms; existing licenses and third-party notices remain applicable. This repository provides public documentation. / Código y recursos originales ZONE © Elgochogms; se conservan licencias y avisos de terceros. Este repositorio contiene documentación pública.
